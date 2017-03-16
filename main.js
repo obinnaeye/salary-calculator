@@ -55,9 +55,9 @@ function displayDetails(){
     console.log("Clicked");
     console.log(names, years, level);
     if (!names || !level || !years){
-        console.log( "you missed filling a detail or some details");
+        alert( "you missed filling a detail or some details");
     }else if (typeof name !=="string"){        
-        console.log( "name should be atleast 3 characters");          
+        alert( "name should be atleast 3 characters");          
     }else{
         document.getElementById("report-name").innerHTML= "Name: " + names;
         document.getElementById("report-cadre").innerHTML="Level: " + level;
