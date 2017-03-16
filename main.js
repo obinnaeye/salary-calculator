@@ -64,7 +64,7 @@ function displayDetails(){
         document.getElementById("report-name").innerHTML= "Name: " + names;
         document.getElementById("report-cadre").innerHTML="Level: " + level;
         document.getElementById("report-years").innerHTML= "Years Of Experience: " + years;
-        var sal= new Employee(name, level, years);
+        var sal= new Employee(names, level, years);
         document.getElementById("report-summary").innerHTML= "Salary summary: " + sal.salaryReport;
         document.getElementById("report").style.display="block";
     }
