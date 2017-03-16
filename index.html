@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <title>Salary Calculator</title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+      <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Josefin+Slab|Khand|Marck+Script|Monoton|Poiret+One|Rajdhani|Special+Elite|VT323" rel="stylesheet">      
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>     
+     <div class="container">
+         <div class="form">
+             <input id="name" class="input" type="text" placeholder="Employee's Name">
+             <input id="years" class="input" type="text" placeholder="Employee's Number of Years of Service">
+             <div class='select-container'>
+                <select name="datum" required class="cadre-selection" id = "cadreSelection">
+                    <option value="" disabled selected hidden>Select Employee's Cadre</option>
+                    <option value="intern" >Interns</option>
+                    <option value="associate">Associates</option>
+                    <option value="manager">Managers</option>
+                    <option value="executive">Executives</option>
+                    <option value="director">Directors</option>
+                </select>
+             </div>
+             <br>           
+             <input id="submit" class="input submit" type="submit" value="submit">
+         </div>
+         <div class="report" id="report">
+             <div id="report-heading" class="details heading">Salary Report</div>
+             <p id="report-name" class="details"></p>
+             <p id="report-cadre" class="details"></p>
+             <p id="report-years" class="details"></p>
+             <p id="report-summary" class="details"></p>
+         </div>
+
+     </div>
+     <script type="text/javascript" src="main.js"></script>
+   </body>
+</html>
