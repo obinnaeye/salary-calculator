@@ -58,8 +58,6 @@ function displayDetails(){
         console.log( "you missed filling a detail or some details");
     }else if (typeof name !=="string"){        
         console.log( "name should be atleast 3 characters");          
-    }else if (typeof years !=="number"){
-        console.log("Years should be number")
     }else{
         document.getElementById("report-name").innerHTML= "Name: " + names;
         document.getElementById("report-cadre").innerHTML="Level: " + level;
