@@ -50,11 +50,11 @@ var button= document.getElementById("submit");
 
 function displayDetails(){
     var names =document.getElementById("name").value,
-	years=Number(document.getElementById("years").value),
+	years=Number(document.getElementById("exp").value),
 	level=document.getElementById("cadreSelection").value;    
     console.log("Clicked");
     console.log(names, years, level);
-    if (!names || !level || !years){
+    if (!names || !level || years ===1){
         alert( "you missed filling a detail or some details");
     }else if (typeof name !=="string"){        
         alert( "name should be atleast 3 characters");          
