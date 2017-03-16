@@ -26,8 +26,10 @@ var Employee = function(name, level, years) {
 		else if (this.years < 5) {
 			return this.baseSalary * 0.2;
 		}
-		else if (this.years < 10) {
+		else if (this.years < 7) {
 			return this.baseSalary * 0.3;
+		}else if (this.years < 9) {
+			return this.baseSalary * 0.4;
 		}
 		else {
 			return this.baseSalary * 0.5;
@@ -42,9 +44,6 @@ var Employee = function(name, level, years) {
 	
 	this.salaryReport = this.getSalaryReport();
 };
-
-var ray= new Employee("Ray", "manager", 7);
-console.log(ray.salaryReport);
 
 
 var button= document.getElementById("submit");
